@@ -16,6 +16,7 @@ module.exports = {
 
   module: {
     loaders: [
+      { test:/bootstrap-sass[\/\\]assets[\/\\]javascripts[\/\\]/, loader: 'imports?jQuery=jquery' },
       {
         test: /\.ts$/,
         loaders: ['ts', 'angular2-template-loader']
