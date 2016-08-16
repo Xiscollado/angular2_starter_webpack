@@ -1,0 +1,11 @@
+.btn-hollow{
+    &.btn-lg{
+      border-radius: 20px;
+    }
+    &:hover{
+      color:#FFBA00;
+      border-color:#FFBA00;
+    }
+    background: none;
+    border: 2px solid white;
+}

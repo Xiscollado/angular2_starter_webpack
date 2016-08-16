@@ -1,0 +1,54 @@
+.headerComponent{
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.navbar{
+	border:none;
+	border-radius:0;
+	padding:30px 0;
+	margin:0;
+	background: url('/assets/img/carbon.png');
+}
+
+.navbar-header{
+	width:100%;
+	position: relative;
+	height:20px;
+}
+
+ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+	li{
+		display: inline-block;
+		margin:0 20px 0 0;
+		line-height: 0;
+		cursor: pointer;
+		position:relative;
+	}
+}
+.img-thumbnail{
+	margin-top:-10px;
+}
+
+.logo{
+	z-index: 1;
+	position: absolute;
+	left:50%;
+	margin-top:-10px;
+	margin-left:-60px;
+	@media screen and (max-width: 768px) {
+		width:80px;
+		top:-25px;
+		left:15px;
+		margin:0;
+	}
+}
+
+.shadowed {
+	-webkit-filter: drop-shadow(0 0 10px rgba(0,0,0,0.8));
+	-ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+	filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+}

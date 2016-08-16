@@ -1,0 +1,30 @@
+<div class="container upcoming-match text-left">
+    <img src="/assets/img/game_logos/{{upcomingMatch.gameName}}.png" alt="{{upcomingMatch.gameName}}" width="200">
+    <h2><a href="#">Upcoming match</a></h2>
+    <ul class="players">
+        <li>
+            <a href="#">
+                <img class="img img-circle img-thumbnail user-avatar"
+                     src="{{upcomingMatch.player1.avatar}}" width="40" height="40"
+                     alt="{{upcomingMatch.player1.name}}">
+            </a>
+            {{upcomingMatch.player1.name}}
+            <span class="badge red-badge">{{upcomingMatch.player1.elo}}</span>
+        </li>
+        <li class="vs"><h2>VS</h2></li>
+        <li>
+            <a href="#">
+                <img class="img img-circle img-thumbnail user-avatar"
+                     src="{{upcomingMatch.player2.avatar}}" width="40" height="40"
+                     alt="{{upcomingMatch.player2.name}}">
+            </a>
+            {{upcomingMatch.player2.name}}
+            <span class="badge red-badge">{{upcomingMatch.player2.elo}}</span>
+        </li>
+    </ul>
+    <ul class="match-details">
+        <li>When : <span><strong>{{upcomingMatch.time}} {{upcomingMatch.timeZone}}</strong></span></li>
+        <li class="stream-list">Stream : <i class="fi flaticon-{{upcomingMatch.streams[0].name}}"></i>  <i class="fi flaticon-{{upcomingMatch.streams[1].name}}"></i></li>
+        <li>Playing for: <strong>{{upcomingMatch.bid | number}} <i class="fi flaticon-coin"></i></strong></li>
+    </ul>
+</div>

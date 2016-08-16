@@ -1,0 +1,16 @@
+.app-main_nav{
+  font-family: 'Roboto', serif;
+  font-size: .8rem;
+  text-shadow: 0 2px 0 rgba(0,0,0,.8);
+  text-transform: uppercase;
+  padding:0;
+  position:absolute;
+  top:80px;
+  width: 100%;
+  text-align: center;
+  list-style-type: none;
+  li{
+    display: inline-block;
+    margin: 0 3%;
+  }
+}

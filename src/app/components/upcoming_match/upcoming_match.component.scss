@@ -1,0 +1,41 @@
+.upcoming-match {
+  margin-top: -40px;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, .8);
+}
+
+h2 {
+  margin: 0;
+  font-weight: 700;
+}
+
+.players, .match-details {
+  margin-top: 10px;
+  list-style: none;
+  padding: 0;
+  li {
+    display: inline-block;
+    position:relative;
+  }
+  h2{
+    margin: 0 10px;
+  }
+}
+
+.match-details li{
+  margin-right:40px;
+}
+
+.stream-list i{
+  margin: 0 3px;
+}
+
+.img-thumbnail {
+  background-color: #FFBA00;
+}
+.badge{
+  position: absolute;
+  left: 23px;
+  bottom: -2px;
+  font-size: 0.6rem;
+  text-shadow: none;
+}

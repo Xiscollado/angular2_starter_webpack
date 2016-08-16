@@ -1,0 +1,17 @@
+.white-line{
+	height:1px;
+	width: 100%;
+	opacity: 0.2;
+	position: absolute;
+	left:50%;
+	margin-left:-50%;
+	background: url('/assets/img/line.png') center center;
+	background-size:100%;
+	background-blend-mode: hard-light;
+}
+.top-line{
+	top:0;
+}
+.bottom-line{
+	bottom:0;
+}

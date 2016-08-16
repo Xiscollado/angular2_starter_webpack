@@ -1,7 +1,23 @@
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-
-    </div>
-  </div>
+<nav class="navbar navbar-default headerComponent">
+	<div class="container">
+		<div class="navbar-header">
+			<span class="pull-left"><i class="fi flaticon-coin"></i> 41.230</span>
+			<img class="logo shadowed" src="/assets/img/logo.png" alt="logo" width="120">
+			<ul class="pull-right">
+				<img class="img img-circle img-thumbnail pull-right user-avatar" src="/assets/img/avatars/128.jpg" width="40" height="40" alt="user photo">
+				<li>
+					<i class="fi flaticon-real-time animated" [ngClass]="{bounceIn : matchNotifications, bounceOut : !matchNotifications}"></i>
+					<i class="fi flaticon-cross" (click)="removeNotification('match')"></i>
+				</li>
+				<li>
+					<i class="fi flaticon-real-time animated" [ngClass]="{bounceIn : chatNotifications, bounceOut : !chatNotifications}"></i>
+					<i class="fi flaticon-chat" (click)="removeNotification('chat')"></i>
+				</li>
+				<li>
+					<i class="fi flaticon-real-time animated" [ngClass]="{bounceIn : mailNotifications, bounceOut : !mailNotifications}"></i>
+					<i class="fi flaticon-mail" (click)="removeNotification('mail')"></i>
+				</li>
+			</ul>
+		</div>
+	</div>
 </nav>
